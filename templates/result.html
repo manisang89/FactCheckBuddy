@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FactBuddy - Result</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      color: #222;
+    }
+
+    .container {
+      background: white;
+      max-width: 700px;
+      width: 100%;
+      padding: 30px 35px;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0078d7;
+      margin-top: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+      user-select: none;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 10px 0 30px;
+      color: #333;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+
+    pre {
+      background: #e1f0ff;
+      border-left: 6px solid #0078d7;
+      border-radius: 6px;
+      padding: 20px;
+      font-size: 1.1rem;
+      color: #004a8c;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background-color: #0078d7;
+      padding: 12px 28px;
+      font-weight: 600;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+
+    a:hover {
+      background-color: #005a9e;
+    }
+
+    a:active {
+      background-color: #00457c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📝 Claim:</h2>
+    <p>{{ claim }}</p>
+
+    <h2>🔍 Result:</h2>
+    <pre>{{ result }}</pre>
+
+    <a href="/">🔙 Check another</a>
+  </div>
+</body>
+</html>
